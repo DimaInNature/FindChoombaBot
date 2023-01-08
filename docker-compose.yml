@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  findchoombabot.presentation:
+    image: ${DOCKER_REGISTRY-}findchoombabotpresentation
+    build:
+      context: .
+      dockerfile: FindChoombaBot.Presentation/Dockerfile
