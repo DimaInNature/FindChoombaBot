@@ -4,6 +4,7 @@ global using FindChoombaBot.Domain.Commands.BotCommands;
 global using FindChoombaBot.Domain.Contracts.Services;
 global using FindChoombaBot.Infrastructure.DependencyInjection.MediatR.Profiles;
 global using MediatR;
+global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using System.Reflection;
 global using Telegram.Bot;

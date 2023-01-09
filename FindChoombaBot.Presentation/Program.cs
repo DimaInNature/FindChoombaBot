@@ -14,7 +14,7 @@ app.Run();
 
 void RegisterServices(IServiceCollection services)
 {
-	services.AddTelegramClient();
+	services.AddTelegramClient(configuration: builder.Configuration);
 
 	services.AddMediatRConfiguration();
 

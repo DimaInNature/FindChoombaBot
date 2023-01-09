@@ -9,9 +9,9 @@ public static class DependencyInjectionExtensions
 		services.AddTransient<IBotRunner, BotRunnerService>();
 	}
 
-	public static void AddTelegramClient(this IServiceCollection services)
+	public static void AddTelegramClient(this IServiceCollection services, IConfiguration configuration)
 	{
 		services.AddTransient<ITelegramBotClient>(implementationFactory: 
-			factory => new TelegramBotClient(token: ""));
+			factory => new TelegramBotClient(token: configuration[key: "Bot:SecureToken"]!));
 	}
 }
