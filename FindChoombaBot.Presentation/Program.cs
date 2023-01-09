@@ -20,6 +20,8 @@ void RegisterServices(IServiceCollection services)
 
 	services.AddServices();
 
+	services.AddLogging();
+
 	services.AddControllers();
 }
 
