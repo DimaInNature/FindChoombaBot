@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FindChoombaBot.Domain\FindChoombaBot.Domain.csproj" />
     <ProjectReference Include="..\FindChoombaBot.Infrastructure\FindChoombaBot.Infrastructure.csproj" />
+    <ProjectReference Include="..\FindChoombaBot.Persistence\FindChoombaBot.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

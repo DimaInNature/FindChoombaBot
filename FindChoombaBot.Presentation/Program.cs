@@ -20,6 +20,8 @@ void RegisterServices(IServiceCollection services)
 
 	services.AddServices();
 
+	services.AddDatabaseConfiguration(configuration: builder.Configuration);
+
 	services.AddLogging();
 
 	services.AddControllers();

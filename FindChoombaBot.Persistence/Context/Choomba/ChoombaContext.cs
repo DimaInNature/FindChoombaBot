@@ -6,6 +6,9 @@ public class ChoombaContext : DbContext
 
 	public DbSet<ChoombaProfileEntity> ChoombasProfiles => Set<ChoombaProfileEntity>();
 
+	public ChoombaContext(DbContextOptions<ChoombaContext> options)
+		: base(options) => Database.EnsureCreated();
+
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
 		base.OnModelCreating(modelBuilder);
